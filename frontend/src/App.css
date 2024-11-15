@@ -1,0 +1,86 @@
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-body {
+    padding: 10px;
+    width: 97.31%;
+    display: flex;
+}
+
+.main-body-left {
+    width: 17.64%;
+    display: flex;
+    flex-direction: column;
+    max-width: 268px;
+    position: relative;
+    height: 100vh;
+}
+
+.main-body-right {
+    display: flex;
+    /* Ensures flexbox layout */
+    flex-direction: row;
+    /* Layout in a horizontal row */
+    justify-content: space-around;
+    /* Distributes items evenly */
+    align-items: center;
+    /* Centers items vertically */
+    width: 100%;
+    /* Ensures full width for the right section */
+    gap: 20px;
+    /* Adds space between the items */
+    flex-wrap: wrap;
+    /* Allows items to wrap if the screen size is small */
+}
+
+.main-body-right>* {
+    flex: 1;
+    /* Allows children to grow equally */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    /* Limits the width of each component */
+    text-align: center;
+    /* Centers the content */
+}
+
+.add-task {
+    width: 100%;
+    height: 48px;
+    padding: 6px 14px 6px 12px;
+    border-radius: 19px;
+    background: #0D062D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    position: sticky;
+}
+
+.add-task-text {
+    width: 65px;
+    height: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+
+.formbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150%;
+    height: 50%;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}

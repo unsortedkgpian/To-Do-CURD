@@ -1,0 +1,110 @@
+.info-card {
+    background: #ECEDEE;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 268px;
+    /* Set a max width to control overflow */
+    aspect-ratio: 136.7 / 100;
+    margin: 10px auto;
+    /* Center the card and add margin */
+    overflow: hidden;
+    /* Prevent child elements from overflowing */
+}
+
+.info-card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Include padding in the element's total width and height */
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+    /* Ensure the image stays within the logo circle */
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    /* Maintain aspect ratio within the logo */
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    word-wrap: break-word;
+    /* Break long words to prevent overflow */
+}
+
+.title-content,
+.title-task {
+    margin: 4px 0;
+    overflow: hidden;
+    /* Prevent text overflow */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* Prevent long text from overflowing */
+
+
+}
+
+.title-content {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #797979;
+}
+
+.title-task {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .info-card {
+        max-width: 90%;
+        /* Make the card more flexible on small screens */
+    }
+
+    .info-card-body {
+        padding: 8px;
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+
+    .title-content,
+    .title-task {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+        white-space: normal;
+        /* Allow text to wrap on smaller screens */
+    }
+}

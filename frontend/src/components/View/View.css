@@ -1,0 +1,72 @@
+.item-view {
+    /* width: 29.57%; */
+    min-width: 29.57%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+
+
+}
+
+.title-box-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.divider {
+    width: 88.7%;
+    height: 3px;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: row;
+    /* Aligns items horizontally */
+    align-items: center;
+    /* Vertically aligns items at the center */
+    gap: 10px;
+    /* Adds space between items */
+}
+
+.title-box-circle-title-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    aspect-ratio: 1/1;
+    background: #E0E0E0;
+    border-radius: 50%;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.52px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #625F6D;
+}
+
+.cards-container {
+    max-height: 800px;
+    /* Adjust the height as needed */
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    padding-right: 8px;
+    /* To accommodate scrollbar space */
+}
+
+.cards-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}

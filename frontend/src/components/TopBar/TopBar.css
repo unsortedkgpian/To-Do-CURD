@@ -1,0 +1,104 @@
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 97.31%;
+    aspect-ratio: 18.08/1;
+    background: #ECEDEE;
+    padding: 20px;
+    margin: 20px;
+    gap: 0;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20.27%;
+    aspect-ratio: 7/1;
+    padding: 10px 12px 10px 12px;
+    gap: 10px;
+    border-radius: 22px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.search-bar-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    max-width: 284px;
+    height: 20px;
+    gap: 8px;
+}
+
+
+.search-bar-area input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #5A5A5A;
+    width: 100%;
+
+}
+
+
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    width: 107px;
+    height: 39px;
+    gap: 0px;
+    border-radius: 5px;
+    border: 1px solid #625F6D;
+    box-sizing: border-box;
+
+    padding: 10px;
+
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    /* Centers icon and text in the button */
+    gap: 5px;
+    /* Space between icon and text */
+    padding: 0;
+
+
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.dropdown-menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-arrow img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
