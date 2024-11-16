@@ -20,12 +20,12 @@ const AllTask = () => {
             })
     }, []);
     const total = data.length;
-    const count = data.filter(d => d.Category == 'Expired' || d.Category == 'Done').length;
-    const con = total - count;
-    con = con.toString();
+    const count = data.filter((d: any) => d.Category == 'Expired' || d.Category == 'Done').length;
+    let con = total - count;
+    let cont = con.toString();
     return (
         <div className="expired">
-            <InfoCard title="All Active Tasks" content={con} backgroundColor="#E89271" icon={AllIcon} />
+            <InfoCard title="All Active Tasks" content={cont} backgroundColor="#E89271" icon={AllIcon} />
         </div>
     )
 }
