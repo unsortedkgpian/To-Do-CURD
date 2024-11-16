@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './TopBar.css';
 import searchLens from './lens.svg';
 import filterLens from './filter.svg';

@@ -1,6 +1,6 @@
-import React from 'react'
+
 import './InfoCard.css'
-import Expired from '../../assets/Expired.svg';
+
 
 type InfoCardProps = {
     title: string;

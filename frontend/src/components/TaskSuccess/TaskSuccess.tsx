@@ -1,10 +1,10 @@
 
 import './TaskSuccess.css';
 import Tick from './Tick-Square.svg';
-
+// @ts-expect-error not using isSuccess
 const TaskSuccess = ({ isSuccess, setIsSuccess, show, setShow }: any) => {
     return (
-        <div className='task-success-body'>
+        <div className='task-success-body '>
             <div className="icon">
                 <img src={Tick} />
             </div>

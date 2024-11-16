@@ -23,13 +23,14 @@ function formatDate(dateString: string): string {
     return `${day}/${month}/${year}`;
 }
 
-
+// @ts-expect-error not using isSuccess
 const ToDoCard = ({ id, category, title, content, deadline, priority, colour }: ToDoCardProps) => {
 
     const [col, setCol] = useState<string>('#D58D49');
     const [colbg, setColbg] = useState<string>('#DFA87433')
     const [currentPriority, setCurrentPriority] = useState<string>(priority);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    // @ts-expect-error not using isSuccess
     const [currentCategory, setCurrentCategory] = useState<string>(category);
 
     useEffect(() => {
