@@ -24,7 +24,7 @@ const AllTask = () => {
     const con = total - count;
     return (
         <div className="expired">
-            <InfoCard title="All Active Tasks" content={con} backgroundColor="#E89271" icon={AllIcon} />
+            <InfoCard title="All Active Tasks" content={con.toString()} backgroundColor="#E89271" icon={AllIcon} />
         </div>
     )
 }
