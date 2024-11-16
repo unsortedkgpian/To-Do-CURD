@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import InfoCard from '../InfoCard/InfoCard'
 import CompletedIcon from './comp.svg';
 import axios from 'axios'
@@ -20,7 +20,7 @@ const Completed = () => {
             })
     }, []);
     const total = data.length;
-    const count = data.filter(d => d.Category == 'Done').length;
+    const count = data.filter((d: any) => d.Category == 'Done').length;
     const con = `${count}/${total}`;
     return (
         <div className="compe">

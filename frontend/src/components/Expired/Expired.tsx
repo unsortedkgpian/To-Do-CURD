@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import InfoCard from '../InfoCard/InfoCard'
 import ExpiredIcon from './Expired.svg';

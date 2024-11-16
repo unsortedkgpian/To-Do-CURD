@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import './View.css'
 import ToDoCard from '../ToDoCard/ToDoCard'
 import axios from 'axios'

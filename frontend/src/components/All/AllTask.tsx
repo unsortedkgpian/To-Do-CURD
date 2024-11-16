@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import InfoCard from '../InfoCard/InfoCard'
 import AllIcon from './all.svg';
@@ -21,8 +21,8 @@ const AllTask = () => {
     }, []);
     const total = data.length;
     const count = data.filter((d: any) => d.Category == 'Expired' || d.Category == 'Done').length;
-    let con = total - count;
-    let cont = con.toString();
+    const con = total - count;
+    const cont = con.toString();
     return (
         <div className="expired">
             <InfoCard title="All Active Tasks" content={cont} backgroundColor="#E89271" icon={AllIcon} />

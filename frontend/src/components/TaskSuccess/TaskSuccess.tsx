@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './TaskSuccess.css';
 import Tick from './Tick-Square.svg';
 

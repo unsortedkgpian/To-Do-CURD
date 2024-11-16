@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './ToDoCard.css'
 import axios from 'axios';
 
@@ -75,7 +75,7 @@ const ToDoCard = ({ id, category, title, content, deadline, priority, colour }: 
             priority: pio,
         }).then(() => {
             console.log("put ");
-        }).catch((err: any) => {
+        }).catch((err) => {
             console.log("error:", err);
         });
 
