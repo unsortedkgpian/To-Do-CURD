@@ -7,7 +7,7 @@ const Expired = () => {
     const [data, setData] = useState<any>([]);
     useEffect(() => {
         console.log("here atleast");
-        axios.get('http://localhost:8000/tasks')
+        axios.get('https://to-do-curd.onrender.com/tasks')
             .then((response) => {
                 console.log(response.data.data);
                 setData(response.data.data);

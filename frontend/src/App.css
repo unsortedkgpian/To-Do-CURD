@@ -20,24 +20,20 @@
 
 .main-body-right {
     display: flex;
-    /* Ensures flexbox layout */
     flex-direction: row;
-    /* Layout in a horizontal row */
     justify-content: space-around;
-    /* Distributes items evenly */
-    align-items: center;
-    /* Centers items vertically */
+    align-items: flex-start;
+    top: 10px;
     width: 100%;
-    /* Ensures full width for the right section */
     gap: 20px;
-    /* Adds space between the items */
+
     flex-wrap: wrap;
     /* Allows items to wrap if the screen size is small */
 }
 
 .main-body-right>* {
     flex: 1;
-    /* Allows children to grow equally */
+
     padding: 10px;
     background-color: #f0f0f0;
     border-radius: 8px;

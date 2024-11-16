@@ -35,7 +35,7 @@ const TodoVarient = ({ isSuccess, setIsSuccess, show, setShow }: any) => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log(title, content, priority, selectedDate);
-        axios.post('http://localhost:8000/tasks', {
+        axios.post('https://to-do-curd.onrender.com/tasks', {
             Title: title,
             content,
             priority,
