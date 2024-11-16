@@ -19,7 +19,7 @@ const Expired = () => {
             })
     }, []);
 
-    const count = data.filter(d => d.Category == 'Expired').length;
+    const count = data.filter((d: any) => d.Category == 'Expired').length;
 
     return (
         <div className="expired">
